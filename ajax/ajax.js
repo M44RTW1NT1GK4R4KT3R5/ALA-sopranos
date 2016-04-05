@@ -1,4 +1,4 @@
-function AJAX(itemId,doel) {
+function AJAX(doel) {
 
 	var xhttp = new XMLHttpRequest(); //the AJAX object
 
@@ -6,7 +6,7 @@ function AJAX(itemId,doel) {
 
 		if (xhttp.readyState == 4 && xhttp.status == 200) { // readyState 4 means the request is done and status 200 is a successful return
 
-	    	document.getElementById(itemId).innerHTML = xhttp.responseText;	//set the returned text in the next html element
+	    	console.log("succes");
 	   	}
 	}
 	xhttp.open("GET", doel, true);	//Initialize the Http request
