@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Sopranos</title>
+		<link rel="stylesheet" href="css/app.css" />
 		<link rel="stylesheet" href="css/foundation.min.css">
 		<script type="text/javascript" src="ajax/ajax.js"/>
-    	<link rel="stylesheet" href="css/app.css" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="title" content="Pizza Sopranos">
 		<meta name="keywords" content="pizza pizza pizza"><!--lol wrm doe ik dit zo-->
@@ -15,23 +15,27 @@
 	<body>
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="js/foundation.js"></script>
-		<div class="top-bar text-center">
+		<div class="top text-center">
 			<img class="logo-top" src="img/logo.png" alt="Sopranos">
 		</div>
-
-
+		<hr>
+		<div class="row column text-center">
+			<h2>Onze pizza`s</h2>
+			<hr>
+		</div>
+		<div id="msg"></div>
 		<div class="row small-up-2 large-up-4">
 			<div class="column">
 				<img class="thumbnail" src="img/pizza-soprano.png">
 				<h5>Pizza Soprano</h5>
 				<p>€7</p>
-				<button type="button" onclick="AJAX('add.php?pizza=soprano')" class="button expanded">Buy</a>
+				<button type="button" onclick="AJAX('add.php?pizza=sopranos pizza')" class="button expanded">Bestel</button>
 			</div>
 			<div class="column">
-				<img class="thumbnail" src="http://placehold.it/300x400">
-				<h5>Nulla At Nulla Justo, Eget</h5>
-				<p>$400</p>
-				<a href="#" class="button expanded">Buy</a>
+				<img class="thumbnail" src="img/pizzapatrick.jpg">
+				<h5>Vierkantpizza van de chef</h5>
+				<p>$8</p>
+				<button type="button" onclick="AJAX('add.php?pizza=vierkante pizza')" class="button expanded">Bestel</button>
 			</div>
 			<div class="column">
 				<img class="thumbnail" src="http://placehold.it/300x400">
