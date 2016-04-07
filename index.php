@@ -13,6 +13,13 @@
 		<meta name="author" content="Patrick Ramge">
 	</head>
 	<body>
+	</body>
+		<?php
+			$iplog = fopen("iplog.txt", "a");
+			$txt = "user ip: ".$_SERVER["REMOTE_ADDR"]."\n";
+			fputs($iplog, $txt);
+			fclose($iplog);
+		?>
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="js/foundation.js"></script>
 		<div class="top text-center">
@@ -29,13 +36,13 @@
 				<img class="thumbnail" src="img/pizza-soprano.png">
 				<h5>Pizza Soprano</h5>
 				<p>€7</p>
-				<button type="button" onclick="AJAX('add.php?pizza=sopranos pizza')" class="button expanded">Bestel</button>
+				<a href="bestel.php" onclick="AJAX('add.php?pizza=sopranos pizza')" class="button expanded">Bestel</a>
 			</div>
 			<div class="column">
 				<img class="thumbnail" src="img/pizzapatrick.jpg">
 				<h5>Vierkantpizza van de chef</h5>
 				<p>$8</p>
-				<button type="button" onclick="AJAX('add.php?pizza=vierkante pizza')" class="button expanded">Bestel</button>
+				<a href="bestel.php" onclick="AJAX('add.php?pizza=vierkante pizza')" class="button expanded">Bestel</a>
 			</div>
 			<div class="column">
 				<img class="thumbnail" src="http://placehold.it/300x400">

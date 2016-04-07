@@ -15,8 +15,8 @@
 
 	<?php
 		$pizza = $_SESSION['pizza'];
+		//ja toch
 		if (isset($pizza)):?>
-
 
 	<body>
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -34,5 +34,6 @@
 		</div>
 		<h1> je pizza is de <?= $pizza; ?></h1>
 	</body>
-	<?php endif ?>
+	<?php endif;
+	session_destroy(); ?>
 </html>
