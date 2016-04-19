@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!doctype html>
 <html class="no-js" lang="nl-NL">
 	<head>
@@ -25,7 +24,14 @@
 		<div class="top text-center">
 			<img class="logo-top" src="img/logo.png" alt="Sopranos">
 		</div>
-		<hr>
+		<div class="top-bar">
+			<div class="top-bar-left">
+				<ul class="menu">
+					<li class="active"><a href="index.php">Shop</a></li>
+					<li><a href="#">Winkelwagen</a></li>
+				</ul>
+			</div>
+		</div>
 		<div class="row column text-center">
 			<h2>Onze pizza`s</h2>
 			<hr>
